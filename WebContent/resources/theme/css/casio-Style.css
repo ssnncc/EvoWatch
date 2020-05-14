@@ -1,0 +1,227 @@
+body {
+  font-family: 'Josefin Sans', sans-serif; }
+  
+.EvoWatch-Picture img {
+	width: 100%;
+	height: 70vh;
+}
+
+.EvoWatch-Picture h1 {
+	padding-top: 120px;
+	text-align: center;
+	font-size: 40px;
+	word-spacing: 5px;
+}
+
+.header-content {
+	padding-bottom: 2px;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.header-content .Sort {
+	display: flex;
+	justify-content: space-between;
+	background: white;
+}
+
+.header-content .Sort .sort-by {
+	margin: 0px 10px;
+	padding-top: 5px;
+}
+
+.header-content .Sort .sort-by>ul {
+	display: flex;
+}
+
+.header-content .Sort .sort-by>ul>li {
+	margin-top: 15px;
+	margin-right: 52px;
+}
+
+.header-content .Sort .sort-by>ul>li:hover ul.country {
+	visibility: visible;
+}
+
+.header-content .Sort .sort-by>ul>li a {
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	
+}
+.header-content .Sort .sort-by>ul>li .nn{
+	padding-bottom: 20px;
+}
+
+.header-content .Sort .sort-by>ul>li a i {
+	margin: 0px 10px;
+	font-size: 20px;
+	
+}
+
+.header-content .Sort .sort-by>ul>li>ul.country {
+	position: absolute;
+	background: whitesmoke;
+	visibility: hidden;
+	margin-left: -8px;
+}
+
+.header-content .Sort .sort-by>ul>li>ul.country>li {
+	padding: 4px;
+	border-bottom: 1px solid #ebe6e6;;
+}
+
+.header-content .Sort .sort-by>ul>li>ul.country>li:hover {
+	background: whitesmoke;;
+}
+
+.header-content .Sort .sort-by>ul>li>ul.country>li a {
+	color: black;
+}
+
+.header-content .Sort .sort-by>ul>li:last-child {
+	margin-right: 0px;
+}
+
+.header-content .Sort .keywords {
+	border-right: 1px solid #607d8b;
+	border-left: 1px solid #607d8b; 
+	padding: 0px 35px;
+	height: 48px;
+}
+
+.Content-Buy {
+	display: flex;
+}
+
+.Content-Buy .Content-Menu {
+	margin-top: 10px;
+	width: 25%;
+}
+
+.Content-Buy .Content-Menu .Menu {
+	background: white;
+}
+
+.Content-Buy .Content-Menu .Menu ul li a {
+	text-decoration: none;
+	color: #5a6176;
+	padding: 12px 5px 12px 15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.Content-Buy .Content-Menu .Menu ul li i {
+	margin-left: 10px;
+	font-size: 13px;
+}
+
+.Content-Buy .Content-Menu .Menu ul li input {
+	margin-right: 5px;
+}
+
+.Content-Buy .Content-Menu .Menu ul ul.Secondary {
+	margin: 0 1px;
+	background: whitesmoke;
+}
+
+.Content-Buy .Content-Menu .Menu ul ul.Secondary li a {
+	text-decoration: none;
+	color: #5a6176;
+	font-size: 14px;
+}
+
+.Content-Buy .content {
+	width: 75%;
+	margin: 30px;
+}
+
+.Content-Buy .content .text {
+	border: 1px solid #ebe6e6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px -5px #3333;
+	background: whitesmoke;
+}
+
+.Content-Buy .content .text p {
+	font-style: italic;
+	color: #7e7575;
+	padding: 20px;
+}
+
+.Content-Buy .content .logo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ebe6e6;
+	padding-bottom: 20px;
+}
+
+.Content-Buy .content .logo ul {
+	display: flex;
+	justify-content: center;
+}
+
+.Content-Buy .content .logo ul li {
+	margin-right: 20px;
+}
+
+.Content-Buy .content .logo ul li:last-child {
+	margin-right: 0px;
+}
+
+.Content-Buy .content .product {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Content-Buy .content .product .item {
+	position: relative;
+	width: 30.5%;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #ebe6e6;
+	margin: 10px;
+	box-shadow: 5px 8px whitesmoke;
+}
+
+.Content-Buy .content .product .item .info-item img {
+	width: 200px;
+	height: 220px;
+	overflow: hidden;
+}
+
+.Content-Buy .content .product .item .info-item img:hover {
+	transform: scale(0.9);
+}
+
+.Content-Buy .content .product .item .info-item h6 {
+	margin-bottom: 5px;
+}
+
+.Content-Buy .content .product .item .Buy {
+	border: 1px solid black;
+	background: white;
+	color: black;
+	font-size: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 59px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: all 0.5s;
+}
+
+.Content-Buy .content .product .item .Buy:hover {
+	background: black;
+	color: white;
+}
+
+.Content-Buy .content .product .item:hover .Buy {
+	opacity: 1;
+	transform: translateY(0);
+}

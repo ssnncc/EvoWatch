@@ -1,0 +1,22 @@
+body {
+  font-family: 'Josefin Sans', sans-serif; }
+.EvoWatch-Picture img {
+	height: 50vh;
+	width: 100%;
+}
+
+.EvoWatch-Picture h1 {
+	margin-top: -170px;
+	margin-bottom: 150px;
+	text-align: center;
+	font-size: 40px;
+	word-spacing: 5px;
+}
+
+.text-content {
+	margin: 30px 50px;
+}
+
+.text-content p {
+	padding: 5px;
+}

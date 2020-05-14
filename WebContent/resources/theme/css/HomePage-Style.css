@@ -1,0 +1,379 @@
+body {
+  font-family: 'Josefin Sans', sans-serif; }
+.EvoWatch-Picture {
+	position: relative;
+	z-index: 10;
+}
+
+.EvoWatch-Picture .slider {
+	display: flex;
+}
+
+.EvoWatch-Picture .slider .item {
+	width: 100%;
+}
+
+.EvoWatch-Picture .slider .item img {
+	height: 80vh;
+}
+
+ .EvoWatch-Picture .slider .owl-nav {
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+.EvoWatch-Picture .slider .owl-nav i {
+	color: #e4e0e0;
+	border: 1px solid #969393;
+	padding: 10px 17px;
+	border-radius: 50%;
+}
+
+.EvoWatch-Picture .slider .owl-dots {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.EvoWatch-Picture .slider .owl-dots button {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-right: 20px;
+	transition: all 0.3s ease-in;
+}
+
+.EvoWatch-Picture .slider .owl-dots button:last-child {
+	margin-right: 0;
+}
+
+.EvoWatch-Picture .slider .owl-dots button.active {
+	background: white;
+}
+
+.SPMoi {
+	margin: 30px;
+	text-align: center;
+}
+
+.SPMoi>p {
+	font-size: 30px;
+}
+
+.SPMoi>p>span:hover {
+	color: #a8716a;
+}
+
+.SPMoi a {
+	margin-top: 10px;
+	font-size: 18px;
+	color: black;
+}
+
+.SPMoi a:hover {
+	color: #a8716a;
+}
+
+.SPMoi .Product {
+	margin: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.SPMoi .Product .Product-1 {
+	position: relative;
+	border: 1px solid #3333;
+      padding: 5px; 
+       box-shadow: 2px 6px whitesmoke;
+}
+
+.SPMoi .Product .Product-1 img {
+	width: 280px;
+	height: 280px;
+	
+}
+
+.SPMoi .Product .Product-1 .Info-product {
+	margin-top: 50px;
+}
+
+.SPMoi .Product .Product-1 .Info-product h4 {
+	color: #cfd6db;
+	font-size: 13px;
+}
+
+.SPMoi .Product .Product-1 .Info-product>h3 {
+	font-size: 16px;
+	margin: 5px;
+}
+
+.SPMoi .Product .Product-1 .Info-product>p {
+	font-size: 16px;
+}
+
+.SPMoi .Product .Product-1 .info1 {
+	margin-top: 30px;
+}
+
+.SPMoi .Product .Product-1 .Buy {
+	border: 1px solid black;
+	background: white;
+	color: black;
+	font-size: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 59px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: all 0.5s;
+}
+
+.SPMoi .Product .Product-1 .Buy:hover {
+	background: black;
+	color: white;
+}
+
+.SPMoi .Product .Product-1:hover .Buy {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.SPMoi a.All-product {
+	display: inline-block;
+	overflow: hidden;
+	border: 1px solid black;
+	padding: 15px 25px;
+	color: white;
+	background: black;
+	word-spacing: 3px;
+	font-size: 13px;
+	transform: perspective(1px) translateZ(0);
+	position: relative;
+	box-shadow: 2px 6px whitesmoke;
+}
+
+.SPMoi a.All-product:hover {
+	color: black;
+}
+
+.SPMoi a.All-product:hover::before {
+	transform: scaleX(1);
+}
+
+.SPMoi a.All-product::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition: all 0.5s ease-out;
+}
+
+.Page3 {
+	margin: 20px 60px;
+	display: flex;
+}
+
+.Page3 .banner-page3 {
+	margin-right: 20px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	transform: scale(1);
+	transition: all 0.5 ease-out;
+	height: 400px;
+}
+
+.Page3 .banner-page3 img {
+	width: 380px;
+	height: 400px;
+}
+
+.Page3 .banner-page3:hover img {
+	transform: scale(1.1);
+}
+
+.Page3 .banner-page3 .text-banner {
+	position: relative;
+}
+
+.Page3 .banner-page3 .text-banner h2 {
+	color: #f9fbfc;
+	font-size: 30px;
+	position: absolute;
+	left: 5%;
+	top: -150px;
+}
+
+.Page3 .banner-page3 .text-banner a {
+	position: absolute;
+	left: 5%;
+	top: -100px;
+	display: inline-block;
+	overflow: hidden;
+	border: 1px solid white;
+	padding: 15px 25px;
+	color: black;
+	word-spacing: 3px;
+	font-size: 13px;
+	transform: perspective(1px) translateZ(0);
+	position: relative;
+	transition: 0.5 ease-out;
+}
+
+.Page3 .banner-page3 .text-banner a:hover {
+	color: white;
+}
+
+.Page3 .banner-page3 .text-banner a:hover::before {
+	width: 0;
+	right: 0;
+	left: auto;
+}
+
+.Page3 .banner-page3 .text-banner a::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	transition: all 0.5s ease-out;
+}
+
+.Page3 .banner-page3:last-child {
+	margin-right: 0;
+}
+
+.Page4 {
+	background:
+		url(http://bizweb.dktcdn.net/100/355/487/themes/720328/assets/ant_product_bg.jpg?1559792790877)
+		no-repeat center/cover;
+	text-align: center;
+}
+
+.Page4>p {
+	font-size: 30px;
+}
+
+.Page4>p>span:hover {
+	color: #a8716a;
+}
+
+.Page4 .Content-Page4 {
+	margin: 50px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.Page4 .Content-Page4>img {
+	margin-left: 180px;
+}
+
+.Page4 .Content-Page4 .Product-1 {
+	position: relative;
+	margin-right: 200px;
+}
+
+.Page4 .Content-Page4 .Product-1 img {
+	width: 280px;
+	height: 280px;
+}
+
+.Page4 .Content-Page4 .Product-1 .Info-product {
+	margin-top: 50px;
+}
+
+.Page4 .Content-Page4 .Product-1 .Info-product h4 {
+	color: #cfd6db;
+	font-size: 13px;
+}
+
+.Page4 .Content-Page4 .Product-1 .Info-product>h3 {
+	font-size: 16px;
+	margin: 5px;
+}
+
+.Page4 .Content-Page4 .Product-1 .Info-product>p {
+	font-size: 16px;
+}
+
+.Page4 .Content-Page4 .Product-1 .info1 {
+	margin-top: 30px;
+}
+
+.Page4 .Content-Page4 .Product-1 .Buy {
+	border: 1px solid black;
+	background: white;
+	color: black;
+	font-size: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 59px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: all 0.5s;
+}
+
+.Page4 .Content-Page4 .Product-1 .Buy:hover {
+	background: black;
+	color: white;
+}
+
+.Page4 .Content-Page4 .Product-1:hover .Buy {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: white;
+	z-index: 100;
+}
+
+.fadedown {
+	animation: fadeDown 0.5s forwards ease-in;
+}
+
+@
+keyframes fadeDown {from { opacity:0;
+	transform: translateY(-20px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+}
